@@ -67,13 +67,5 @@ class ProfileController extends Controller
         return Redirect::to('/');
     }
 
-    public function Search(Request $request){
-        $user =  User::where('gender', 'like', "%$request->gender%")->get();
-        if(count( $user)){
-            $meaasge = true;
-        }else{
-            $meaasge = false;
-        }
-        return response()->json( $meaasge, 200);
-    }
+     
 }

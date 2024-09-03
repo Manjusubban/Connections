@@ -2,13 +2,13 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Jodi App</title>
+  <title>Chat App</title>
 <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="./style.css">
 <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 <body>
 
-<header class="container header"><a class="logo" href="#">Jodi App</a>
+<header class="container header"><a class="logo" href="#">Chat App</a>
   <nav class="header-nav container">
     <a href="#">Home</a>
     <a href="#">About</a>
@@ -78,7 +78,7 @@
 
 <footer class="d-flex" style="margin-left: 485px;">
     <p>Author: Hege Refsnes
-    <a href="mailto:hege@example.com">hege@example.com</a></p>
+    <a href="mailto:hege@example.com"> </a></p>
   </footer>
 
 </body>
