@@ -18,7 +18,11 @@ Route::middleware('auth')->group(function () {
 
 
 });
-Route::post('/search', [ProfileController::class, 'Search'])->name('profile.search');
+
+
+// Route::post('/callback/google', [ProfileController::class, 'GenerateToken'])->name('google.check');
+
+
 
 
 require __DIR__.'/auth.php';

@@ -19,7 +19,7 @@ class Authenticate
     {
         if(!auth()->check()){
 
-            return redirect(route('login.page'));
+            return redirect(route('login'));
 
         }
         return $next($request);

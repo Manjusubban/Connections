@@ -1,3 +1,285 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
+
+body {
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+  vertical-align: baseline;
+	font-family: 'Lato', sans-serif;
+	background-color: #808080;
+}
+.container {
+	display: flex;
+	padding: 0.3rem 0.5rem;
+	background-color:#fff;
+	border-radius:4%;
+}
+.header {
+	position: fixed;
+	z-index: 10;
+	width: 100%;
+	justify-content: space-between;
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+	font-weight: 900;
+	letter-spacing: 2px;
+	line-height: 2;
+}
+	.logo {
+		text-decoration: none;
+		font-family: serif;
+		font-size:20px;
+		padding: 1rem;
+		color: gold;
+		z-index: inherit;
+	}
+	.header a:hover {
+		opacity: 0.6;
+		transition: 0.3s;
+	}
+	.header-nav {
+		align-items: center;
+	}
+		.header-nav a {
+			margin-left : 0.3rem;
+			text-decoration: none;
+			padding: 1rem;
+			color: inherit;
+			z-index: inherit;
+		}
+.background {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	/* background-image: url("1.jpg"); */
+	background-repeat: repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+@media all and (max-width: 600px) {
+	.header {
+		position: inherit;
+	}
+  .header, .header-nav {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+		align-content: center;
+    padding: 0;
+		background-color: #fff;
+  }
+}
+
+
+/* card */
+
+body{
+    background-color: black;
+    }
+    .container-backgrounds {
+    max-width: 100%;
+    position: relative;
+    top: 120px;
+    margin: 0 auto;
+    padding-bottom: 10px ;
+    box-sizing: border-box;
+
+    }
+    .cards-container-backgrounds {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    min-height: 440px;
+    }
+    .card-backgrounds {
+    max-width: 350px;
+    max-height: 196px;
+    min-width: 350px;
+    min-height: 196px;
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(26, 26, 26, 0.725);
+    transition: transform 0.3s ease;
+    }
+
+    .card-content-backgrounds {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity .3s ease;
+    }
+    .filter{
+        display: block;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        filter: blur(5px);
+    }
+      .filter {
+        display: block;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        background-color: #00000096;
+        transition: opacity .4s ease;
+    }
+    .card-backgrounds:hover .filter {
+    opacity:1;
+    }
+
+    .card-backgrounds:hover .card-content-backgrounds {
+    opacity: 1;
+    }
+
+    .price-tag-backgrounds {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 5px 15px;
+    border-radius: 7px 15px;
+    color: #fff;
+    background-color: #9e0788;
+    }
+    .owned{
+    border: 3px solid #0d6efd;
+    }
+    .owned-tag-backgrounds {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 7px 15px;
+    color: #fff;
+    background-color: #0d6efd;
+    }
+    .one{
+    background: url('https://i.pinimg.com/originals/f2/78/9e/f2789ea92b456422c7cefd33fd7b1e9f.jpg') center center no-repeat;
+      background-size:400px;
+    }
+    .two{
+    background: url('https://i.pinimg.com/originals/59/73/b0/5973b0ef2786f3701906ddb94c3bfc76.png') center center no-repeat;
+      background-size:400px;
+    }
+    .three{
+    background: url('https://i.pinimg.com/originals/b8/92/30/b892302f5ca4f4534329483ca8eb706b.jpg') center center no-repeat;
+      background-size:400px;
+    }
+    .four{
+    background: url('https://i.pinimg.com/originals/7e/a9/b9/7ea9b9f45b868e055ec667d533f41b8b.jpg') center center no-repeat;
+      background-size:400px;
+    }
+    .five{
+    background: url('https://i.pinimg.com/originals/60/c9/3b/60c93b73ca55ce726d29fe336fa133d7.jpg') center center no-repeat;
+      background-size:400px;
+    }
+    .six{
+    background: url('https://i.pinimg.com/originals/de/9b/e2/de9be21d89ca1566c830fca3f806792f.png') center center no-repeat;
+      background-size:400px;
+    }
+
+
+    /* profile */
+
+    .emp-profile{
+        padding: 3%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        border-radius: 0.5rem;
+        background: #fff;
+    }
+    .profile-img{
+        text-align: center;
+    }
+    .profile-img img{
+        width: 70%;
+        height: 100%;
+    }
+    .profile-img .file {
+        position: relative;
+        overflow: hidden;
+        margin-top: -20%;
+        width: 70%;
+        border: none;
+        border-radius: 0;
+        font-size: 15px;
+        background: #212529b8;
+    }
+    .profile-img .file input {
+        position: absolute;
+        opacity: 0;
+        right: 0;
+        top: 0;
+    }
+    .profile-head h5{
+        color: #333;
+    }
+    .profile-head h6{
+        color: #0062cc;
+    }
+    .profile-edit-btn{
+        border: none;
+        border-radius: 1.5rem;
+        width: 70%;
+        padding: 2%;
+        font-weight: 600;
+        color: #6c757d;
+        cursor: pointer;
+    }
+    .proile-rating{
+        font-size: 12px;
+        color: #818182;
+        margin-top: 5%;
+    }
+    .proile-rating span{
+        color: #495057;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .profile-head .nav-tabs{
+        margin-bottom:5%;
+    }
+    .profile-head .nav-tabs .nav-link{
+        font-weight:600;
+        border: none;
+    }
+    .profile-head .nav-tabs .nav-link.active{
+        border: none;
+        border-bottom:2px solid #0062cc;
+    }
+    .profile-work{
+        padding: 14%;
+        margin-top: -15%;
+    }
+    .profile-work p{
+        font-size: 12px;
+        color: #818182;
+        font-weight: 600;
+        margin-top: 10%;
+    }
+    .profile-work a{
+        text-decoration: none;
+        color: #495057;
+        font-weight: 600;
+        font-size: 14px;
+    }
+    .profile-work ul{
+        list-style: none;
+    }
+    .profile-tab label{
+        font-weight: 600;
+    }
+    .profile-tab p{
+        font-weight: 600;
+        color: #0062cc;
+    }
