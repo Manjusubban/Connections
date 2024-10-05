@@ -1,3 +1,5 @@
+
+
 body {
 	height: 100vh;
 	margin: 0;
@@ -50,7 +52,7 @@ body {
 	position: relative;
 	height: 100%;
 	width: 100%;
-	background-image: url("1.jpg");
+	/* background-image: url("1.jpg"); */
 	background-repeat: repeat;
 	background-position: center;
 	background-size: cover;
@@ -61,7 +63,6 @@ body {
 		position: inherit;
 	}
   .header, .header-nav {
-    -webkit-flex-flow: column wrap;
     flex-flow: column wrap;
 		align-content: center;
     padding: 0;
@@ -281,3 +282,4 @@ body{
         font-weight: 600;
         color: #0062cc;
     }
+

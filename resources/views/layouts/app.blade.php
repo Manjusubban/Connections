@@ -6,9 +6,9 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <title>{{ config('app.name', 'Laravel') }}</title>
-        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-        <link rel="stylesheet" type="text/css"  href="{{ asset('css/bootstrap.min.css') }}">
-        <script   src="{{ asset('js\jquery-3.7.1.min.js') }}"></script>
+        <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+        <link rel="stylesheet" href="{{ mix('css/quill.snow.css') }}">
+
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
@@ -36,4 +36,5 @@
             </main>
         </div>
     </body>
+
 </html>

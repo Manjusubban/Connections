@@ -1,4 +1,4 @@
- 
+
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
@@ -7,8 +7,11 @@
     </x-slot>
 
 
+    <div id="editor" ></div>
 
 </x-app-layout>
 
-<script src="{{ asset('js/app.js') }}">  </script>
+
+
+<script src="{{ mix('js/app.js') }}">  </script>
 

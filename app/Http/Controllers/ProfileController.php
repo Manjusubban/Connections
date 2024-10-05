@@ -67,5 +67,7 @@ class ProfileController extends Controller
         return Redirect::to('/');
     }
 
-     
+     public function GenerateToken(Request $request){
+             dd($request->all());
+     }
 }
